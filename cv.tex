@@ -10,9 +10,12 @@
 \usepackage{url}
 \usepackage{parskip} 
 
-\usepackage[utf8x]{inputenc}
-\usepackage[english,russian]{babel}
 \usepackage{cmap}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A,T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{csquotes}
+\usepackage[english,russian]{babel}
 
 %other packages for formatting
 \RequirePackage{color}
@@ -44,14 +47,10 @@
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 \titlespacing{\section}{0pt}{10pt}{10pt}
 
-%for publications
-\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
-
 %Setup hyperref package, and colours for links
 \usepackage[unicode, draft=false]{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
-\setlength\bibitemsep{1em}
 
 %for social icons
 \usepackage{fontawesome5}
@@ -131,13 +130,13 @@
 %----------------------------------------------------------------------------------------
 %	Навыки
 %----------------------------------------------------------------------------------------
-\section{Skills}
+\section{Навыки}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
 Go &  \normalsize{Умение самостоятельно писать полноценные сервисы на Go с использованием общепринятых практик}\\
 Python  &  \normalsize{Знание синтаксиса и базовой работы языка. Умение написать базовый сервис с использованием Django или FastAPI}\\  
 PostgreSQL & \normalsize{Навыки проектирования баз данных. Понимание что, где, когда и как создавать определенные индексы} \\ 
 SQL & \normalsize{Написания SQL запросов разных сложностей. Умение оптимизации запросов} \\
-Redis, MongoDB & \normalize{Основные навыки работы с СУБД}
+Redis, MongoDB & \normalsize{Основные навыки работы с СУБД}
 \end{tabularx}
 
 \vfill
